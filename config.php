@@ -2,8 +2,8 @@
     session_start();
 
     $langArray = array(
-        array("Cesky", "cs", "./images/czech_flag.png"),
-        array("Anglicky", "en", "./images/british_flag.png"),
+        array("Cesky", "cs", "./img/czech_flag.png"),
+        array("Anglicky", "en", "./img/british_flag.png"),
     );
 
     $language = "";

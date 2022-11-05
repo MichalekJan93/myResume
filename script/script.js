@@ -58,3 +58,18 @@ window.addEventListener('resize', () => {
   changeBackground();
 })
 
+
+/**
+ * Show multilanguage drop item
+ */
+let dropItem = document.querySelector('.multilanguage-drop-item');
+
+document.querySelector('.multilanguage').addEventListener('mousemove', () =>{
+  console.log(dropItem);
+  dropItem.style.display = 'block'; 
+})
+
+document.querySelector('.multilanguage').addEventListener('mouseout', () =>{
+  console.log(dropItem);
+  dropItem.style.display = 'none';
+})

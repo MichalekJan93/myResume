@@ -5,9 +5,8 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -18,72 +17,68 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-
 #col-main h2 {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid rgb(222, 222, 222);
   font-size: 1.5rem;
   font-weight: 900;
   padding: 1rem 0;
 }
-
 #col-main #header {
   height: 200px;
   background-image: url("../img/background-mob.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   filter: grayscale(50%);
   -webkit-filter: grayscale(50%);
 }
-
 #col-main #header p, #col-main #header h1 {
   color: white;
 }
-
-#col-main #col-body .col {
-  margin-bottom: 2rem;
-}
-
 #col-main #col-body .personal {
   background-color: #EDEDED;
   padding: 0 1rem;
   margin-bottom: 0;
+  position: relative;
 }
-
+#col-main #col-body .personal .col {
+  margin-bottom: 1rem;
+}
 #col-main #col-body .personal .personal-sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 5px;
 }
-
+#col-main #col-body .personal .personal-sticky .multilanguage {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: auto;
+}
+#col-main #col-body .personal .personal-sticky .multilanguage li {
+  list-style-type: none;
+}
+#col-main #col-body .personal .personal-sticky .multilanguage li .multilanguage-nav-item img {
+  width: 30px;
+}
+#col-main #col-body .personal .personal-sticky .multilanguage li .multilanguage-drop-item {
+  display: none;
+}
+#col-main #col-body .personal .personal-sticky .multilanguage li .multilanguage-drop-item img {
+  width: 30px;
+}
 #col-main #col-body .personal .personal-sticky .personal-img {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 0 1rem 0;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-img .img {
   height: 200px;
   width: 200px;
@@ -95,7 +90,6 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-img .img::after {
   content: "";
   width: 200px;
@@ -110,70 +104,54 @@ body {
   right: 5px;
   top: -10px;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-information p {
   line-height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-information p img {
   width: 20px;
   height: 20px;
   margin-right: 0.4rem;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-contact a {
   line-height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   color: black;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-contact a img {
   width: 20px;
   height: 20px;
   margin-right: 0.4rem;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-socials a {
   line-height: 2rem;
 }
-
 #col-main #col-body .personal .personal-sticky .personal-socials a img {
   width: 25px;
   height: 25px;
   margin-right: 0.4rem;
 }
-
 #col-main #col-body .main {
   padding: 0 1rem;
   background-color: white;
   margin-bottom: 0;
 }
-
+#col-main #col-body .main .col {
+  margin-bottom: 2rem;
+}
 #col-main #col-body .main .col > * {
   margin-bottom: 1rem;
 }
-
 #col-main #col-body .main .profile {
   padding-top: 1rem;
   font-size: 1.1rem;
 }
-
 #col-main #col-body .main .profile p {
   text-align: justify;
 }
-
 #col-main #col-body .main .profile .js-app {
   display: block;
   margin: 1rem 0;
@@ -185,43 +163,31 @@ body {
   color: white;
   text-decoration: none;
 }
-
 #col-main #col-body .main .profile .js-app:hover {
   background-color: white;
   color: black;
 }
-
 #col-main #col-body .main .skills .flex-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
 }
-
 #col-main #col-body .main .skills .single-chart {
-  width: 150px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 33%;
+  max-width: 150px;
+  justify-content: space-around;
 }
-
 #col-main #col-body .main .skills .circular-chart {
   display: block;
   margin: 10px auto;
   max-width: 80%;
   max-height: 250px;
 }
-
 #col-main #col-body .main .skills .circle-bg {
   fill: none;
   stroke: #eee;
   stroke-width: 3.8;
 }
-
 #col-main #col-body .main .skills .circle {
   fill: none;
   stroke-width: 2.8;
@@ -230,34 +196,27 @@ body {
           animation: progress 1s ease-out forwards;
   stroke: black;
 }
-
 @-webkit-keyframes progress {
   0% {
     stroke-dasharray: 0 100;
   }
 }
-
 @keyframes progress {
   0% {
     stroke-dasharray: 0 100;
   }
 }
-
 #col-main #col-body .main .skills .percentage {
   fill: black;
   font-family: sans-serif;
   font-size: 0.3rem;
   text-anchor: middle;
 }
-
 #col-main #col-body .main .work .work-activitie {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid rgb(222, 222, 222);
   padding-bottom: 1rem;
 }
-
 #col-main #col-body .main .work .work-activitie .token {
   background-color: black;
   color: white;
@@ -266,36 +225,29 @@ body {
   padding: 0.2rem;
   position: relative;
   line-height: 25px;
+  width: 100px;
 }
-
 #col-main #col-body .main .work .work-activitie .token .arrow-right {
   width: 0;
   height: 0;
   border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  /* 40px height (20+20) */
+  border-bottom: 15px solid transparent; /* 40px height (20+20) */
   border-left: 20px solid black;
   position: absolute;
   right: -20px;
   bottom: 0;
 }
-
 #col-main #col-body .main .work .work-activitie p {
   padding-left: 2rem;
 }
-
 #col-main #col-body .main .work .work-activitie p.company {
   font-weight: bold;
 }
-
 #col-main #col-body .main .education .education-activitie {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid rgb(222, 222, 222);
   padding-bottom: 1rem;
 }
-
 #col-main #col-body .main .education .education-activitie .token {
   background-color: black;
   color: white;
@@ -304,59 +256,38 @@ body {
   padding: 0.2rem;
   position: relative;
   line-height: 25px;
+  width: 100px;
 }
-
 #col-main #col-body .main .education .education-activitie .token .arrow-right {
   width: 0;
   height: 0;
   border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  /* 40px height (20+20) */
+  border-bottom: 15px solid transparent; /* 40px height (20+20) */
   border-left: 20px solid black;
   position: absolute;
   right: -20px;
   bottom: 0;
 }
-
 #col-main #col-body .main .education .education-activitie p {
   padding-left: 2rem;
 }
-
 #col-main #col-body .main .education .education-activitie p.company {
   font-weight: bold;
 }
-
 #col-main #col-body .main .hobbies .hobbies-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 4rem;
   width: 3rem;
   cursor: default;
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie .img {
   background-size: contain;
   background-repeat: no-repeat;
@@ -365,50 +296,38 @@ body {
   height: 100%;
   position: relative;
   top: 0;
-  -webkit-transition: ease 500ms;
   transition: ease 500ms;
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:nth-child(1) .img {
   background-image: url("../img/football.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:nth-child(2) .img {
   background-image: url("../img/book.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:nth-child(3) .img {
   background-image: url("../img/programming.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:nth-child(4) .img {
   background-image: url("../img/ghost.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:nth-child(5) .img {
   background-image: url("../img/film.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:hover .img {
   top: -10px;
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:hover:nth-child(1) .img {
   background-image: url("../img/football-hover.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:hover:nth-child(2) .img {
   background-image: url("../img/book-hover.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:hover:nth-child(3) .img {
   background-image: url("../img/programming-hover.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:hover:nth-child(4) .img {
   background-image: url("../img/ghost-hover.png");
 }
-
 #col-main #col-body .main .hobbies .hobbies-list .hobbie:hover:nth-child(5) .img {
   background-image: url("../img/film-hover.png");
 }
@@ -418,8 +337,6 @@ body {
     background-image: url("../img/background-desktop.jpg");
   }
   #col-main #col-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #col-main #col-body .personal {
@@ -440,8 +357,7 @@ body {
   }
   #col-main #col-body .main .skills .single-chart {
     width: 33%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   #col-main #col-body .main .skills .circular-chart {
     display: block;
@@ -450,7 +366,6 @@ body {
     max-height: 250px;
   }
 }
-
 @media (min-width: 1000px) {
   #col-main #header h1 {
     font-size: 3.5rem;
@@ -460,8 +375,7 @@ body {
   }
   #col-main #col-body .main .skills .single-chart {
     width: 20%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   #col-main #col-body .main .skills .circular-chart {
     display: block;
@@ -469,5 +383,4 @@ body {
     max-width: 60%;
     max-height: 250px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

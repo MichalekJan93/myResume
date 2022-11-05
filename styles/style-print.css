@@ -1,0 +1,35 @@
+body {
+  -webkit-print-color-adjust: exact;
+     color-adjust: exact;
+          print-color-adjust: exact;
+}
+body #col-main h2 {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+body #col-main #header {
+  height: 100px;
+}
+body #col-main #col-body .personal .personal-sticky .multilanguage {
+  display: none;
+}
+body #col-main #col-body .personal .personal-sticky .personal-img {
+  margin: 0;
+}
+body #col-main #col-body .personal .personal-sticky .personal-img .img {
+  width: 100px;
+  height: 100px;
+}
+body #col-main #col-body .personal .personal-sticky .personal-img .img:after {
+  width: 100px;
+  height: 100px;
+}
+body #col-main #col-body .main .profile .js-app {
+  display: none;
+}
+body #col-main #col-body .main .skills .single-chart {
+  width: 20%;
+}
+body #col-main #col-body .main .hobbies .hobbie {
+  width: 2rem;
+}/*# sourceMappingURL=style-print.css.map */

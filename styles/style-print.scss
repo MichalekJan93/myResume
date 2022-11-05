@@ -1,0 +1,66 @@
+
+body{
+    print-color-adjust: exact;
+    #col-main{
+
+        h2{
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+
+        #header{
+            height: 100px;
+        }
+
+        #col-body{
+
+            .personal{
+
+                .personal-sticky{
+
+                    .multilanguage{
+                        display: none;
+                    }
+
+                    .personal-img{
+                        margin: 0;
+
+                        .img{
+                            width: 100px;
+                            height: 100px;
+
+                            &:after{
+                                width: 100px;
+                                height: 100px;  
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main{
+
+                .profile{
+
+                    .js-app{
+                        display: none;
+                    }
+                }
+
+                .skills{
+
+                    .single-chart {
+                        width: 20%;
+                    }
+                }
+
+                .hobbies{
+                    
+                    .hobbie{
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

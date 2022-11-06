@@ -15,7 +15,7 @@
                     <p>Ahoj, <br /><br />
                     Jsem vášnivý samouk front-end webový vývojář a programování je mou vášní už od střední školy. Poslední rok a půl se velmi aktivně učím programovat na frontendu JavaScript, TypeScript a nedávno jsem se ponořil do Reactu a React native, ve kterém bych rád v budoucnu tvořil webové i mobilní aplikace. <br /><br /> Abych se více zdokonalil v programování tak aktuálně dokončují rekvalifikační kurz vývojář www aplikací u <a href="https://www.itnetwork.cz/">ITNetwork</a> a také ať mám aspoň nějaký ten papír v ruce. Po práci v elektro oboru, hledám svou první pracovní příležitost jako front-end junior programátor.
                     <br /><br />
-                    Pro svou lepší prezentaci ať nezůstanu jen u pouhých slov jsem si pro Vás připravil ukázku své práce. Navrhl jsem jednoduchou webovou aplikaci se základními funkcemi a správou SQL databázi pro pojišťovnictví. Jedná se o single-page aplikaci, která pro veškerou práci s DOM využívá vanilla JS.
+                    Pro svou lepší prezentaci ať nezůstanu jen u pouhých slov jsem si pro Vás připravil ukázku své práce. Navrhl jsem jednoduchou webovou aplikaci se základními funkcemi a správou SQL databázi pro pojišťovnictví. Jedná se o single-page aplikaci, která pro veškerou práci s DOM využívá vanilla JS. Kód aplikace také naleznete na mém <a href="https://github.com/MichalekJan93/insurance-app" >GitHubu</a>.
                     <a href="https://www.michalekjan.cz/insuranceApp/" class="js-app">UKÁZKA</a>
                     Pokud jsem Vás aspoň trochu zaujal, tak mne prosím kontaktujte. Velmi rád bych se s vámi setkal.</p>
         ',
